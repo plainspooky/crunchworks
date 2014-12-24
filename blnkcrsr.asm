@@ -34,7 +34,7 @@ HTIMI:      equ 0xFD9F
 PAL:        equ  5                      ; 1/10s em 50Hz
 NTSC:       equ  6                      ; 1/10s em 60Hz
             
-            org 0xdd00-7                ; just a suggestion
+            org 0xd000-7                ; just a suggestion
             
 BINHEAD:    db 0xfe
             dw BINSTART
