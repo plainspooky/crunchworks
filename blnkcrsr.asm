@@ -1,5 +1,5 @@
 ;   
-;   BLNKCRSR version 0
+;   BLNKCRSR version 2
 ;   
 ;   A blinking cursor hooked in video's interruption
 ;   
