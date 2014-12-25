@@ -1,0 +1,35 @@
+BLNKCRSR
+A blinking cursor like on TRS-80 Color for MSX
+
+(C)2014 Giovanni dos Reis Nunes <giovanni.nunes@gmail.com>
+
+
+TO BUILD
+--------
+Don't use the '--msx' option! Pasmo has a bug that sets 0x0000 as
+execution address in binary files (or the documentation don't
+explain how to set it).
+
+Just type:
+
+    $ pasmo -d -v blnkcrsr.asm blnkcrsr.bin
+
+
+TO USE
+------
+In MSX BASIC type:
+
+    BLOAD "BLNKCRSR.BIN",R
+
+And in SCREEN 1 use:
+
+    A=USR8(0)  ->  To enable blinking cursor
+
+    A=USR9(0)  ->  To disable blinking cursor
+
+
+BUGS
+----
+I think that this program has a lot of bugs. But hust enable the
+blinking in SCREEN 1.
+
